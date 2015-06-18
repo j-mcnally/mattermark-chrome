@@ -1,10 +1,11 @@
-=md-navbar name='Mattermark' class='indigo'
-  li
-    if session.isAuthenticated
-      a click='invalidateSession'
-        | Logout
-    else
-      link-to 'login'
-        | Login
-.container
-  =outlet
+.navbar-fixed
+  =md-navbar name='Mattermark' class='indigo'
+    li
+      if session.isAuthenticated
+        a click='invalidateSession'
+          | Logout
+      else
+        link-to 'login'
+          | Login
+
+=outlet

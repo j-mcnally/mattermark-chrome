@@ -1,8 +1,18 @@
 body {
   min-width: 400px;
-  min-height: 600px;
+  min-height: 300px;
 }
 
 :focus {
   outline: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+a {
+  &:hover {
+    cursor: pointer;
+  }
 }

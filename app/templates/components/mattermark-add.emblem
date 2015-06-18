@@ -1,0 +1,11 @@
+.container.center-align
+  h4
+    | Not Found
+
+  p
+    | We didn't find any company information for 
+    = domain
+    br
+    |  We would love to learn about this company.
+
+  =md-btn text='Submit To Mattermark' buttonType='large' class='indigo darken-2' action='submitNewCompany'

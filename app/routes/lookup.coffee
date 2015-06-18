@@ -15,7 +15,7 @@ LookupRoute = Ember.Route.extend AuthenticatedRouteMixin,
               resolve(response)
             )
           else
-            resolve({})
+            resolve({notfound: domain})
       )
     )
 

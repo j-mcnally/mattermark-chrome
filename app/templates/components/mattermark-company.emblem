@@ -1,0 +1,69 @@
+h4.center-align
+  = model.company_name
+
+table class="striped"
+  colgroup
+    col style="width: 30%;"
+    col style="width: 70%;"
+  tbody          
+    if model.description_plain_text
+      tr
+        td.bold
+          | Description
+        td
+          = model.description_plain_text
+    if model.location
+      tr
+        td.bold
+          | Location
+        td
+          = model.location
+    if model.state
+      tr
+        td.bold
+          | State
+        td
+          = model.state
+    if model.country
+      tr
+        td.bold
+          | Country
+        td
+          = model.country
+
+    tr
+      td.bold
+        | Social
+      td
+        social-icons model=model
+    if model.is_raising
+      tr
+        td.bold
+          | Currently Raising?
+        td
+          = model.is_raising
+    if model.est_founding_date
+      tr
+        td.bold
+          | Est. Founding Date
+        td
+          time-format model.est_founding_date
+    if model.stage
+      tr
+        td.bold
+          | Stage
+        td
+          = model.stage
+    if model.total_funding
+      tr
+        td.bold
+          | Total Funding
+        td
+          format-money model.total_funding
+        
+    if model.last_funding_date
+      tr
+        td.bold
+          | Last Funding Date
+        td
+          time-format model.last_funding_date

@@ -1,23 +1,4 @@
-ul
-  li
-    = model.company_name
-  li
-    = model.location
-  li
-    = model.state
-  li
-    = model.country
-  li
-    = model.twitter_handle
-  li
-    = model.facebook_slug
-  li
-    = model.is_raising
-  li
-    = model.est_founding_date
-  li
-    = model.stage
-  li
-    = model.total_funding
-  li
-    = model.last_funding_date
+if model.notfound
+  mattermark-add domain=model.notfound
+else
+  mattermark-company model=model

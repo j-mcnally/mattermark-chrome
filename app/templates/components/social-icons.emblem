@@ -1,0 +1,6 @@
+if model.twitter_handle
+  a click="goTwitter"
+    fa-icon "twitter" size=2
+if model.facebook_slug
+  a click="goFacebook"
+    fa-icon "facebook" size=2
