@@ -4,7 +4,7 @@ A chrome extension to give you Mattermark information for whatever site you are 
 
 Currently a WIP.
 
-Installation
+## Installation
 
 `$ ember build`
 
