@@ -1,0 +1,8 @@
+span
+  | Login to Mattermark
+
+form submit="authenticate"
+  =md-input label='Email' icon="mdi-communication-email" value=identification
+  =md-input label='Password' icon="mdi-action-lock" value=password
+
+  =md-btn-submit text='Login' buttonType='large' class='indigo darken-2'

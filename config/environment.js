@@ -2,6 +2,14 @@
 
 module.exports = function(environment) {
   var ENV = {
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self' 'unsafe-inline' 'unsafe-eval' use.typekit.net connect.facebook.net maps.googleapis.com maps.gstatic.com",
+      'font-src': "'self' data:",
+      'connect-src': "'self' api.mattermark.com",
+      'img-src': "'self'",
+      'style-src': "'self' 'unsafe-inline'"
+    },
     modulePrefix: 'mattermark-chrome',
     environment: environment,
     baseURL: '/',
